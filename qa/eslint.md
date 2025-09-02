@@ -19,7 +19,7 @@ pnpm add -D eslint @eslint/js eslint-plugin-vue eslint-plugin-import eslint-plug
 
 **根目录下新建`.prettierrc.json`**
 
-```json
+```javascript
 {
     "semi": false, // 行尾不加分号（更简洁，Vue/React 社区常用）
     "singleQuote": true, // 使用单引号，避免和 JSX 属性双引号冲突
@@ -86,7 +86,7 @@ export default [
 
 ## 4.在 `package.json` 添加脚本
 
-```json
+```javascript
 {
   "scripts": {
     "dev:lint": "npm run lint && vite", // 启动前先进行eslint检查
